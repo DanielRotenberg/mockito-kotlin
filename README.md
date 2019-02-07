@@ -20,7 +20,7 @@ A test using Mockito-Kotlin typically looks like the following:
 @Test
 fun doAction_doesSomething(){ 
   /* Given */
-  val mock = mock<MyClass> {
+  val mock = mock<SomeClass> {
     on { getText() } doReturn "text"
   }
   val classUnderTest = ClassUnderTest(mock)
